@@ -42,10 +42,10 @@
 
 
 
-![Yu Bo 的 GitHub 数据](https://github-readme-stats.vercel.app/api?username=jasperyubo&show_icons=true&theme=tokyonight)
+![Yu Bo 的 GitHub 数据](assets/github-stats.svg)
 
 
 
 
 
-![常用语言](https://github-readme-stats.vercel.app/api/top-langs/?username=jasperyubo&layout=compact&theme=tokyonight)
+![常用语言](assets/top-languages.svg)

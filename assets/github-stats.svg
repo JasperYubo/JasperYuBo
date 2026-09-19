@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="210" viewBox="0 0 520 210" role="img" aria-labelledby="title desc">
+  <title id="title">Yu Bo 的 GitHub 数据</title>
+  <desc id="desc">公开仓库、获得的 Star、项目 Fork 和关注者数量。</desc>
+  <style>
+    .title{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#70a5fd}
+    .label{font:500 13px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#a9b1d6}
+    .value{font:700 25px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#c0caf5}
+    .foot{font:500 12px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#787c99}
+  </style>
+  <rect width="519" height="209" x="0.5" y="0.5" rx="14" fill="#1a1b27" stroke="#343b58"/>
+  <text class="title" x="28" y="39">Yu Bo 的 GitHub 数据</text>
+  <text class="label" x="34" y="82">公开仓库</text>
+  <text class="value" x="34" y="111">6</text>
+  <text class="label" x="279" y="82">获得 Star</text>
+  <text class="value" x="279" y="111">1</text>
+  <text class="label" x="34" y="150">项目 Fork</text>
+  <text class="value" x="34" y="179">0</text>
+  <text class="label" x="279" y="150">关注者</text>
+  <text class="value" x="279" y="179">0</text>
+  <text class="foot" x="28" y="194">GitHub @JasperYubo · 仓库自产统计图</text>
+</svg>

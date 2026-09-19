@@ -1,0 +1,73 @@
+name: 更新个人主页统计图
+
+on:
+  schedule:
+    # 22:47 UTC = 次日北京时间 06:47。
+    - cron: '47 22 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-profile-stats.yml'
+      - 'scripts/render_profile_stats.py'
+      - 'tests/**'
+  pull_request:
+    paths:
+      - '.github/workflows/update-profile-stats.yml'
+      - 'scripts/render_profile_stats.py'
+      - 'tests/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-stats-${{ github.event.pull_request.number || 'main' }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: 校验统计图生成器
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: 读取仓库
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: 准备 Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: 运行离线测试
+        run: python -m unittest discover -s tests -v
+
+  update:
+    name: 生成并发布统计图
+    needs: verify
+    if: github.repository == 'JasperYubo/JasperYuBo' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: 读取仓库
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+      - name: 准备 Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.13'
+      - name: 生成静态 SVG
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/render_profile_stats.py --username JasperYubo --output-dir assets
+      - name: 提交发生变化的统计图
+        run: |
+          git add -- assets/github-stats.svg assets/top-languages.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git -c user.name=github-actions[bot] \
+              -c user.email=41898282+github-actions[bot]@users.noreply.github.com \
+              -c commit.gpgSign=false \
+              commit -m "更新个人主页统计图"
+          git push origin HEAD:main
