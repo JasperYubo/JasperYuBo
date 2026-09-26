@@ -20,7 +20,7 @@
   <text class="label" x="28" y="135">Python</text>
   <text class="label" x="492" y="135" text-anchor="end">5.0%</text>
   <rect x="132" y="125" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="125" width="16.4" height="10" rx="5" fill="#38bdae"/>
+  <rect x="132" y="125" width="16.5" height="10" rx="5" fill="#38bdae"/>
   <text class="label" x="28" y="166">CSS</text>
   <text class="label" x="492" y="166" text-anchor="end">0.7%</text>
   <rect x="132" y="156" width="330" height="10" rx="5" fill="#24283b"/>
