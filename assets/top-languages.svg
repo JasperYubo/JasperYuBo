@@ -12,7 +12,7 @@
   <text class="label" x="28" y="73">HTML</text>
   <text class="label" x="492" y="73" text-anchor="end">72.3%</text>
   <rect x="132" y="63" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="63" width="238.5" height="10" rx="5" fill="#70a5fd"/>
+  <rect x="132" y="63" width="238.4" height="10" rx="5" fill="#70a5fd"/>
   <text class="label" x="28" y="104">JavaScript</text>
   <text class="label" x="492" y="104" text-anchor="end">20.7%</text>
   <rect x="132" y="94" width="330" height="10" rx="5" fill="#24283b"/>
