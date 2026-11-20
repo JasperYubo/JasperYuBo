@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="243" viewBox="0 0 520 243" role="img" aria-labelledby="title desc">
   <title id="title">常用语言</title>
-  <desc id="desc">HTML 64.3%；JavaScript 20.2%；Python 13.0%；Shell 1.4%；CSS 1.1%</desc>
+  <desc id="desc">HTML 59.6%；JavaScript 18.8%；Python 16.7%；Shell 3.6%；CSS 1.3%</desc>
   <style>
     .title{font:700 22px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#70a5fd}
     .label{font:500 13px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;fill:#a9b1d6}
@@ -10,24 +10,24 @@
   <rect width="519" height="242" x="0.5" y="0.5" rx="14" fill="#1a1b27" stroke="#343b58"/>
   <text class="title" x="28" y="39">常用语言</text>
   <text class="label" x="28" y="73">HTML</text>
-  <text class="label" x="492" y="73" text-anchor="end">64.3%</text>
+  <text class="label" x="492" y="73" text-anchor="end">59.6%</text>
   <rect x="132" y="63" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="63" width="212.1" height="10" rx="5" fill="#70a5fd"/>
+  <rect x="132" y="63" width="196.8" height="10" rx="5" fill="#70a5fd"/>
   <text class="label" x="28" y="104">JavaScript</text>
-  <text class="label" x="492" y="104" text-anchor="end">20.2%</text>
+  <text class="label" x="492" y="104" text-anchor="end">18.8%</text>
   <rect x="132" y="94" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="94" width="66.6" height="10" rx="5" fill="#bf91f3"/>
+  <rect x="132" y="94" width="62.0" height="10" rx="5" fill="#bf91f3"/>
   <text class="label" x="28" y="135">Python</text>
-  <text class="label" x="492" y="135" text-anchor="end">13.0%</text>
+  <text class="label" x="492" y="135" text-anchor="end">16.7%</text>
   <rect x="132" y="125" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="125" width="43.0" height="10" rx="5" fill="#38bdae"/>
+  <rect x="132" y="125" width="55.1" height="10" rx="5" fill="#38bdae"/>
   <text class="label" x="28" y="166">Shell</text>
-  <text class="label" x="492" y="166" text-anchor="end">1.4%</text>
+  <text class="label" x="492" y="166" text-anchor="end">3.6%</text>
   <rect x="132" y="156" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="156" width="4.8" height="10" rx="5" fill="#f4d47c"/>
+  <rect x="132" y="156" width="11.9" height="10" rx="5" fill="#f4d47c"/>
   <text class="label" x="28" y="197">CSS</text>
-  <text class="label" x="492" y="197" text-anchor="end">1.1%</text>
+  <text class="label" x="492" y="197" text-anchor="end">1.3%</text>
   <rect x="132" y="187" width="330" height="10" rx="5" fill="#24283b"/>
-  <rect x="132" y="187" width="3.5" height="10" rx="5" fill="#f7768e"/>
+  <rect x="132" y="187" width="4.2" height="10" rx="5" fill="#f7768e"/>
   <text class="foot" x="28" y="227">按公开、非 Fork 仓库的代码字节统计</text>
 </svg>
